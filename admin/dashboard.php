@@ -10,13 +10,14 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 <html lang="de">
 <head>
     <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Admin-Dashboard</h1>
-    <ul>
-        <li><a href="manage_users.php">Benutzerverwaltung</a></li>
-        <li><a href="site_stats.php">Statistiken</a></li>
-        <li><a href="content_management.php">Inhaltsverwaltung</a></li>
-    </ul>
+<h2>Willkommen im Admin Dashboard, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
+    <nav>
+        <a href="manage_users.php">Benutzerverwaltung</a>
+        <a href="site_stats.php">Statistiken</a>
+        <a href="content_management.php">Inhaltsverwaltung</a>
+    </nav>
 </body>
 </html>

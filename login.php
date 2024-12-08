@@ -35,13 +35,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="de">
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Login</h2>
-    <form method="post">
-        <input type="text" name="username" placeholder="Benutzername" required><br>
-        <input type="password" name="password" placeholder="Passwort" required><br>
-        <button type="submit">Login</button>
-    </form>
+    <div class="container">
+        <form method="post">
+            <input type="text" name="username" placeholder="Benutzername" required><br>
+            <input type="password" name="password" placeholder="Passwort" required><br>
+           <button type="submit">Login</button>
+           <a href="forgot_password.php">forgot password?</a>
+        </form>
+        
+    </div>
+    
 </body>
 </html>

@@ -26,14 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: login.php");
             exit;
         } catch (PDOException $e) {
-            if ($e->getCode() == 23000) { // Doppelte Einträge verhindern
+            if ($e->getCode() == 23000) { // Doppelte Eintrï¿½ge verhindern
                 echo "Benutzername oder E-Mail bereits vergeben.";
             } else {
                 echo "Fehler: " . $e->getMessage();
             }
         }
     } else {
-        echo "Bitte füllen Sie alle Felder aus.";
+        echo "Bitte fï¿½llen Sie alle Felder aus.";
     }
 }
 ?>
@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="de">
 <head>
     <title>Registrierung</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Registrierung</h2>
