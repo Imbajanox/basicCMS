@@ -23,6 +23,12 @@ $users = $stmt->fetchAll();
 </head>
 <body>
     <h1>Benutzerverwaltung</h1>
+    <nav>
+        <a href="manage_users.php">Benutzerverwaltung</a>
+        <a href="site_stats.php">Statistiken</a>
+        <a href="content_management.php">Inhaltsverwaltung</a>
+</nav>
+    <div class="container">
     <table>
         <thead>
             <tr>
@@ -48,5 +54,6 @@ $users = $stmt->fetchAll();
             <?php endforeach; ?>
         </tbody>
     </table>
+            </div>
 </body>
 </html>

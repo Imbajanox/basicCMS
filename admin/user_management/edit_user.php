@@ -53,8 +53,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="de">
 <head>
     <title>Benutzer bearbeiten</title>
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
+    <nav>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="manage_users.php">Benutzerverwaltung</a>
+        <a href="site_stats.php">Statistiken</a>
+        <a href="../logout.php">Logout</a>
+    </nav>
+    <div class="container">
     <h1>Benutzer bearbeiten</h1>
     <form method="POST">
         <label>Benutzername:</label>
@@ -73,5 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Speichern</button>
         <a href="../manage_users.php">Abbrechen</a>
     </form>
+</div>
+    
 </body>
 </html>
