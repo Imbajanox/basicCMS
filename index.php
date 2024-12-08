@@ -16,9 +16,10 @@ if (isset($_SESSION['user_id'])) {
     <title>Document</title>
 </head>
 <body>
-
-
-<a href="login.php">Login</a>
-<a href="register.php">Register</a>
+<h2>Willkommen</h2>
+<nav>
+    <a href="login.php">Login</a>
+    <a href="register.php">Register</a>
+<nav>
 </body>
 </html>

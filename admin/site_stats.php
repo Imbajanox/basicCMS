@@ -19,14 +19,15 @@ $adminUsers = $db->query("SELECT COUNT(*) AS count FROM users WHERE role = 'admi
 <html lang="de">
 <head>
     <title>Statistiken</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>Seitenstatistiken</h1>
-    <ul>
-        <li><a href="manage_users.php">Benutzerverwaltung</a></li>
-        <li><a href="site_stats.php">Statistiken</a></li>
-        <li><a href="content_management.php">Inhaltsverwaltung</a></li>
-    </ul>
+    <nav>
+        <a href="manage_users.php">Benutzerverwaltung</a>
+        <a href="site_stats.php">Statistiken</a>
+        <a href="content_management.php">Inhaltsverwaltung</a>
+    </nav>
     <p>Gesamte Benutzer: <?php echo $totalUsers; ?></p>
     <p>Administratoren: <?php echo $adminUsers; ?></p>
 </body>

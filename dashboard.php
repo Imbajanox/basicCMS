@@ -21,6 +21,7 @@ if(!isset($_SESSION['user_id'])) {
         echo "<a href='admin/dashboard.php'>Admin Dashboard</a>";
     }
     ?>
+    <a href="edit_profile.php">Edit Profile</a>
     <a href="logout.php">Logout</a>
     </nav>
 </body>
