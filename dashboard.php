@@ -23,6 +23,7 @@ if(!isset($_SESSION['user_id'])) {
     ?>
     <a href="edit_profile.php">Edit Profile</a>
     <a href="logout.php">Logout</a>
+    
     </nav>
 </body>
 </html>
